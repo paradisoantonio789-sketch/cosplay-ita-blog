@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://paradisoantonio789-sketch.github.io/cosplay-ita-blog/sitemap.xml

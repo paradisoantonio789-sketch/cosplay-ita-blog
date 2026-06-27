@@ -1,0 +1,45 @@
+name: Aggiornamento Automatico Blog Cosplay
+
+on:
+  schedule:
+    # Ogni 3 giorni alle 09:00 UTC (11:00 ora italiana)
+    - cron: '0 9 */3 * *'
+  workflow_dispatch:  # Permette esecuzione manuale
+
+permissions:
+  contents: write
+
+jobs:
+  update-blog:
+    runs-on: ubuntu-latest
+    name: Aggiungi Nuovo Articolo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Installa dipendenze
+        run: pip install requests python-dateutil
+
+      - name: Genera nuovo articolo cosplay
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python3 scripts/genera_articolo.py
+
+      - name: Aggiorna homepage e sitemap
+        run: python3 scripts/aggiorna_index.py
+
+      - name: Commit e push modifiche
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Actions Bot"
+          git add -A
+          git diff --staged --quiet || git commit -m "🌟 Nuovo articolo cosplay - $(date +'%d/%m/%Y')"
+          git push
