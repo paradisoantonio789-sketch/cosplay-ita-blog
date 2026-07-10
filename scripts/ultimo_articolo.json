@@ -1,11 +1,11 @@
 {
-  "numero": 10,
-  "slug": "cosplay-videogiochi",
-  "titolo": "Dal Pixel allo Schermo: Il Cosplay dei Videogiochi in Italia",
-  "categoria": "Gaming & Cosplay",
-  "categoria_class": "gaming",
-  "categoria_color": "#06b6d4",
-  "lead": "I personaggi dei videogiochi sono tra i più amati dalla community cosplay italiana. Scopri come i cosplayer italiani portano in vita eroi digitali con costumi di straordinaria precisione.",
-  "data": "7 Luglio 2026",
-  "filename": "articolo10.html"
+  "numero": 11,
+  "slug": "cosplay-principianti-guida",
+  "titolo": "Iniziare nel Cosplay: La Guida Completa per Principianti Italiani",
+  "categoria": "Guide & Tutorial",
+  "categoria_class": "guide",
+  "categoria_color": "#10b981",
+  "lead": "Vuoi iniziare nel mondo del cosplay ma non sai da dove partire? Questa guida completa ti accompagna passo dopo passo, dal scegliere il tuo primo personaggio fino a presentarti alla tua prima fiera.",
+  "data": "10 Luglio 2026",
+  "filename": "articolo11.html"
 }
