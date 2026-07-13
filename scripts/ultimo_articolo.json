@@ -1,11 +1,11 @@
 {
-  "numero": 12,
-  "slug": "fiere-cosplay-italia-calendario",
-  "titolo": "Il Calendario delle Fiere Cosplay Italiane: Dove e Quando Andare",
-  "categoria": "Fiere & Eventi",
-  "categoria_class": "fiere",
-  "categoria_color": "#f59e0b",
-  "lead": "Dall'alba dell'anno fino all'autunno inoltrato, l'Italia è costellata di eventi dedicati alla cultura pop e al cosplay. Ecco la guida definitiva alle fiere imperdibili per ogni appassionato.",
+  "numero": 13,
+  "slug": "cosplay-sostenibile-riciclo",
+  "titolo": "Cosplay Sostenibile: Come Creare Costumi Incredibili con Materiali Riciclati",
+  "categoria": "Eco Cosplay",
+  "categoria_class": "eco",
+  "categoria_color": "#10b981",
+  "lead": "Il cosplay sostenibile è una tendenza in crescita nella community italiana. Scopri come creare costumi straordinari riducendo l'impatto ambientale e risparmiando denaro grazie al riciclo creativo.",
   "data": "13 Luglio 2026",
-  "filename": "articolo12.html"
+  "filename": "articolo13.html"
 }
